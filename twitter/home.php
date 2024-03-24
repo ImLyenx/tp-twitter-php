@@ -1,12 +1,10 @@
-<!-- tweet form -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="global.css">
-    <title>Document</title>
+    <title>Home | Twitter</title>
 </head>
 <body>
     <form id="postform" class="form" action="redirect.php" method="POST">
@@ -52,7 +50,6 @@
             $requete->bindValue(':userid', $userid);
             $requete->execute();
             $user = $requete->fetch(PDO::FETCH_ASSOC);
-            // if user is currently logged in, add a delete button
             if (isset($_SESSION['username']) && $_SESSION['username'] === $user['username']) {
                 echo '<div><b>' . $user['username'] . '</b> : <form action="redirect.php" method="POST" class="deleteform">
                 <input type="hidden" name="form" value="delete">

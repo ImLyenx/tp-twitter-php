@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="global.css">
-    <title>Add User</title>
+    <title>Sign Up | Twitter</title>
 </head>
 <body>
     <form id="loginform" action="redirect.php" method="POST">

@@ -1,5 +1,3 @@
-/* twitter style, centered content with post form at the top */
-/* and a list of posts below */
 * {
   box-sizing: border-box;
 }
@@ -49,13 +47,11 @@ form.form button[type="submit"] {
 #posts > div:last-child {
   border-bottom: none;
 }
-/* align it to the right */
 .timestamp {
   font-size: 0.8em;
   color: #666;
   float: right;
 }
-/* sticking to bottom left */
 #logoutform {
   position: fixed;
   bottom: 15px;
@@ -68,7 +64,6 @@ form.form button[type="submit"] {
   width: 100%;
   padding: 5px;
 }
-/* stick to right but on the left of the timestamp*/
 .deleteform {
   display: inline;
   position: absolute;
